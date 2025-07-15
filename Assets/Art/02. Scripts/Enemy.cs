@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public int hp;
-    private float _speed = 5f;
+    public static float _speed = 5f;
     public TextMeshPro hpText;
 
     private void Start()
@@ -16,5 +16,7 @@ public class Enemy : MonoBehaviour
     private void Update()
     {
         transform.position += Time.deltaTime * _speed * Vector3.down;
+        if(transform.position.y <= -6)
+            Destroy(gameObject);
     }
 }

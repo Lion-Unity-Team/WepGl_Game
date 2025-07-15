@@ -21,8 +21,8 @@ public class Spawner : MonoBehaviour
         while (true)
         {                
             _enemyNum = Random.Range(1, 4);
-            _enemyHpMin = Slim.hp - (int)(Slim.hp * 0.2f);
-            _enemyHpMax = Slim.hp + (int)(Slim.hp * 0.2f);
+            _enemyHpMin = Slime.hp - (int)(Slime.hp * 0.2f);
+            _enemyHpMax = Slime.hp + (int)(Slime.hp * 0.2f);
             
             _isExist = false;
             _enemyHpList.Clear();
@@ -30,14 +30,14 @@ public class Spawner : MonoBehaviour
             {
                 _randomHp = Random.Range(_enemyHpMin, _enemyHpMax);
                 _enemyHpList.Add(_randomHp);
-                if (_randomHp < Slim.hp)
+                if (_randomHp < Slime.hp)
                     _isExist = true;
             }
 
             if (_enemyNum == 3 && !_isExist)
             {
                 int index = Random.Range(0, _enemyNum);
-                _enemyHpList[index] = Random.Range(_enemyHpMin, Slim.hp);
+                _enemyHpList[index] = Random.Range(_enemyHpMin, Slime.hp);
             }
 
             int[] pos = new int[3]{0, 0, 0};
