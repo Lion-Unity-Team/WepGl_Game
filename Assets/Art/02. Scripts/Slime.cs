@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class Slime : MonoBehaviour
 {
+    private Animator _animator;
     public TextMeshPro hpText;
     public TextMeshPro hpBigText;
     private Vector2 _mousePos;
     public static int hp = 5;
+
+    private void Awake()
+    {
+        _animator = GetComponent<Animator>();
+    }
 
     private void Start()
     {
@@ -41,7 +47,8 @@ public class Slime : MonoBehaviour
                 Destroy(other.gameObject);
             }
             else
-                Destroy(gameObject);
+                _animator.SetTrigger("Death");
+
         }
     }
 }

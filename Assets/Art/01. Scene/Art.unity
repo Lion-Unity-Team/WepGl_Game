@@ -4402,7 +4402,7 @@ PrefabInstance:
     - target: {fileID: 2536431489919309066, guid: 4c6297554cdad5b4bbd9462d0d375b87,
         type: 3}
       propertyPath: m_Name
-      value: Green Idle
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3818325775398830101, guid: 4c6297554cdad5b4bbd9462d0d375b87,
         type: 3}
@@ -4459,6 +4459,11 @@ PrefabInstance:
       propertyPath: hpBigText
       value: 
       objectReference: {fileID: 831963263}
+    - target: {fileID: 8724868561133281189, guid: 4c6297554cdad5b4bbd9462d0d375b87,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: da29e0ce0e14a8a409d24fc468112655, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
