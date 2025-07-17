@@ -48,7 +48,6 @@ public class Slime : MonoBehaviour
             }
             else
                 _animator.SetTrigger("Death");
-
         }
     }
 }
