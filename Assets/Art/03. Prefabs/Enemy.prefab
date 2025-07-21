@@ -128,6 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 0
   hpText: {fileID: 5326879536029128809}
+  Player: {fileID: 2536431489919309066, guid: 4c6297554cdad5b4bbd9462d0d375b87, type: 3}
 --- !u!61 &6126210532678936331
 BoxCollider2D:
   m_ObjectHideFlags: 0

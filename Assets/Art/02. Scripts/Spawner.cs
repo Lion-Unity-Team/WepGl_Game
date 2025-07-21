@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
+    public Slime Slime;
     public GameObject _slime;
     private List<int> _enemyHpList = new List<int>();
     
@@ -19,7 +20,13 @@ public class Spawner : MonoBehaviour
     private IEnumerator Start()
     {
         while (true)
-        {                
+        {
+            if (Slime != null && Slime.isDead)
+            {
+                gameObject.SetActive(false);
+                yield break; 
+            }
+
             _enemyNum = Random.Range(1, 4);
             _enemyHpMin = Slime.hp - (int)(Slime.hp * 0.2f);
             _enemyHpMax = Slime.hp + (int)(Slime.hp * 0.2f);
