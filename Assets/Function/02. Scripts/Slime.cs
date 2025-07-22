@@ -9,7 +9,6 @@ public class Slime : MonoBehaviour
     public TextMeshPro hpBigText;
     private Vector2 _mousePos;
     public static int hp = 5;
-    public bool isDead = false;
 
     private void Awake()
     {
@@ -48,12 +47,7 @@ public class Slime : MonoBehaviour
                 Destroy(other.gameObject);
             }
             else
-            {
                 _animator.SetTrigger("Death");
-                hpText.gameObject.SetActive(false);
-                isDead = true;
-                
-            }
         }
     }
 }
