@@ -6,125 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ceeb083d-8a9e-4b0e-98a2-697c80ac4a6d" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity WepGl_Game_2025-7-12/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity WepGl_Game_2025-7-12/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/99. Resources/basic_tileset_and_assets_32x32_standard_v2/basic_tileset_and_assets_standard/decorations.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/99. Resources/basic_tileset_and_assets_32x32_standard_v2/basic_tileset_and_assets_standard/decorations.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/99. Resources/basic_tileset_and_assets_32x32_standard_v2/basic_tileset_and_assets_standard/dirtpath_tiles.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/99. Resources/basic_tileset_and_assets_32x32_standard_v2/basic_tileset_and_assets_standard/dirtpath_tiles.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/99. Resources/basic_tileset_and_assets_32x32_standard_v2/basic_tileset_and_assets_standard/ground_decorations.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/99. Resources/basic_tileset_and_assets_32x32_standard_v2/basic_tileset_and_assets_standard/ground_decorations.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/99. Resources/basic_tileset_and_assets_32x32_standard_v2/basic_tileset_and_assets_standard/water_and_island_tiles_v2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/99. Resources/basic_tileset_and_assets_32x32_standard_v2/basic_tileset_and_assets_standard/water_and_island_tiles_v2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/BMJUA_ttf SDF.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/BMJUA_ttf SDF.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/BMJUA_ttf.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/BMJUA_ttf.ttf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Dialouge UI.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Dialouge UI/Emotes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Dialouge UI/Emotes/Teemo Basic emote animations sprite sheet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Dialouge UI/Emotes/Teemo Basic emote animations sprite sheet.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Dialouge UI/Premade dialog box  big.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Dialouge UI/Premade dialog box  big.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Dialouge UI/Premade dialog box medium.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Dialouge UI/Premade dialog box medium.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Dialouge UI/Premade dialog box small.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Dialouge UI/Premade dialog box small.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Dialouge UI/dialog box big.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Dialouge UI/dialog box big.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Dialouge UI/dialog box character finished talking click to continue indicator - spritesheet .png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Dialouge UI/dialog box character finished talking click to continue indicator - spritesheet .png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Dialouge UI/dialog box medium.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Dialouge UI/dialog box medium.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Dialouge UI/dialog box small.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Dialouge UI/dialog box small.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Dialouge UI/dialog box.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Dialouge UI/dialog box.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Icons.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Icons/All Icons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Icons/All Icons.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Icons/special icons.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Icons/special icons/Small Happines-Sadness icons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Icons/special icons/Small Happines-Sadness icons.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Icons/special icons/Special Icons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Icons/special icons/Special Icons.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Icons/white icons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Icons/white icons.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Mouse sprites.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Mouse sprites/Catpaw Mouse icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Mouse sprites/Catpaw Mouse icon.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Mouse sprites/Catpaw holding Mouse icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Mouse sprites/Catpaw holding Mouse icon.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Mouse sprites/Catpaw pointing Mouse icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Mouse sprites/Catpaw pointing Mouse icon.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Mouse sprites/Triangle Mouse icon 1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Mouse sprites/Triangle Mouse icon 1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Mouse sprites/Triangle Mouse icon 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Mouse sprites/Triangle Mouse icon 2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Mouse sprites/Triangle Mouse icon 3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Mouse sprites/Triangle Mouse icon 3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Setting menu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Setting menu.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Sprite sheet for Basic Pack.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Sprite sheet for Basic Pack.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/UI Big Play Button.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/UI Big Play Button.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/UI Settings Buttons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/UI Settings Buttons.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/buttons.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/buttons/Small Square Buttons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/buttons/Small Square Buttons.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/buttons/Square Buttons 19x26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/buttons/Square Buttons 19x26.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/buttons/Square Buttons 26x19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/buttons/Square Buttons 26x19.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/buttons/Square Buttons 26x26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/Sprite sheets/buttons/Square Buttons 26x26.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/Emoji_Spritesheet_Free.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/Emoji_Spritesheet_Free.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/Inventory_Blocks_Spritesheet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/Inventory_Blocks_Spritesheet.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/Inventory_Herat_Spritesheet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/Inventory_Herat_Spritesheet.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/Inventory_Light_Herat_Spritesheet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/Inventory_Light_Herat_Spritesheet.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/Inventory_Light_example_with_slots_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/Inventory_Light_example_with_slots_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/Inventory_Spritesheet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/Inventory_Spritesheet.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/inventory_Light_example.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/inventory_Light_example.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/inventory_Light_example_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/inventory_Light_example_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/inventory_Light_example_with_slots.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/inventory_Light_example_with_slots.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/inventory_example.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/inventory_example.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/inventory_example_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/inventory_example_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/inventory_example_with_slots.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/inventory_example_with_slots.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/inventory_example_with_slots_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/inventory_example_with_slots_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/weather.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/weather/Weather_Icons_smal_freel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/weather/Weather_Icons_smal_freel.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/weather/Weather_UI_Free.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/weather/Weather_UI_Free.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/speech_bubble_grey.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/emojis-free/speech_bubble_grey.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/fonts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/fonts/pixel-letters-7-8x14-preview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/fonts/pixel-letters-7-8x14-preview.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/fonts/pixel-letters-7-8x14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/fonts/pixel-letters-7-8x14.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/fonts/pixelFont-7-8x14-sproutLands.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/fonts/pixelFont-7-8x14-sproutLands.ttf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/read_me.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resource/Sprout Lands - UI Pack - Basic pack/read_me.txt.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UI/01. Scene/UI.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/01. Scene/UI.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/02. Scripts/Destroy_UI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/02. Scripts/Destroy_UI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/02. Scripts/SoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/02. Scripts/SoundManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,6 +124,8 @@
       <workItem from="1753171460645" duration="96000" />
       <workItem from="1753171572719" duration="260000" />
       <workItem from="1753172200125" duration="4872000" />
+      <workItem from="1753259835581" duration="1379000" />
+      <workItem from="1753261656120" duration="224000" />
     </task>
     <servers />
   </component>

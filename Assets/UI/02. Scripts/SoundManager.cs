@@ -1,10 +1,10 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+// 게임의 사운드를 관리하는 스크립트
 public class SoundManager : MonoBehaviour
 {
     static SoundManager instance;
-
     
     [SerializeField] private AudioSource bgm_Player;
     [SerializeField] private AudioSource sfx_Player;
@@ -17,7 +17,7 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private Slider bgm_Slider;
     [SerializeField] private Slider sfx_Slider;
     
-    // 싱글톤 기법
+    // 싱글톤 기법을 사용
     private void Awake()
     {
         if (instance == null)
@@ -61,6 +61,7 @@ public class SoundManager : MonoBehaviour
         sfx_Player.volume = volume / sfx_Slider.maxValue;
     }
     
+    // 효과음을 출력하는 함수
     public void SFXPlay(string clipName)
     {
         foreach (var clip in sfx_Clips)
