@@ -96,7 +96,7 @@ public class Enemy_Spawner : MonoBehaviour
                 }
             }
 
-            yield return null;
+            yield return new WaitForSeconds(2f);
         }
     }
 
