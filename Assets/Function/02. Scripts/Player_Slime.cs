@@ -20,12 +20,12 @@ public class PlayerSlime : MonoBehaviour
 
         if (playerHp < enemyHp)
         {
-            // 플레이어 사망
+            
             Destroy(gameObject);
         }
         else
         {
-            // 플레이어가 적을 먹고 체력 증가
+           
             playerHp += enemyHp;
             playerHpText.text = playerHp.ToString();
             Destroy(collision.gameObject);

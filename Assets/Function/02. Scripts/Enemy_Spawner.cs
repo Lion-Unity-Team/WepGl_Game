@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using System.Numerics; // BigInteger 사용
+using System.Numerics; 
 
 public class Enemy_Spawner : MonoBehaviour
 {
     [SerializeField] private GameObject enemy_Prefab;
-    [SerializeField] private GameObject playerSlime; // 플레이어 오브젝트 참조
+    [SerializeField] private GameObject playerSlime; 
     private bool[] spawn = new bool[3];
     private List<GameObject> enemyList = new List<GameObject>();
     public float enemySpeed = 5.0f;
@@ -19,7 +19,6 @@ public class Enemy_Spawner : MonoBehaviour
         {
             yield return new WaitUntil(() => AllEnemiesDead());
 
-            // 플레이어 체력 TMP에서 숫자 얻기
             TMP_Text playerText = playerSlime.GetComponentInChildren<TMP_Text>();
             BigInteger playerHp = BigInteger.Parse(playerText.text);
 
@@ -30,25 +29,24 @@ public class Enemy_Spawner : MonoBehaviour
 
             for (int i = 0; i < 3; i++) spawn[i] = false;
 
-            // 적 체력 리스트 준비 (무조건 한 마리는 player보다 낮게 설정)
             List<BigInteger> enemyHpList = new List<BigInteger>();
-            int guaranteedIndex = Random.Range(0, spawnCount); // 이 인덱스의 적은 무조건 player보다 작음
+            int guaranteedIndex = Random.Range(0, spawnCount);
 
             for (int i = 0; i < spawnCount; i++)
             {
                 BigInteger hp;
                 if (i == guaranteedIndex)
                 {
-                    hp = RandomBigInteger(minHp, playerHp - 1); // 무조건 작은 값
+                    hp = RandomBigInteger(minHp, playerHp - 1);
                 }
                 else
                 {
-                    hp = RandomBigInteger(minHp, maxHp); // ±20% 범위
+                    hp = RandomBigInteger(minHp, maxHp); 
                 }
                 enemyHpList.Add(hp);
             }
 
-            // 실제 적 생성
+           
             int enemy_count = 0;
             while (enemy_count < spawnCount)
             {
@@ -58,11 +56,11 @@ public class Enemy_Spawner : MonoBehaviour
                     spawn[enemy_Pos] = true;
                     GameObject enemy = Instantiate(enemy_Prefab, new UnityEngine.Vector2(-2 + 2 * enemy_Pos, 7), UnityEngine.Quaternion.identity);
 
-                    // 속도 적용
+                    
                     Enemy_Movement enemyscript = enemy.GetComponent<Enemy_Movement>();
                     enemyscript.speed = enemySpeed;
 
-                    // 체력 TMP 적용
+                    
                     TMP_Text enemyText = enemy.GetComponentInChildren<TMP_Text>();
                     BigInteger enemyHp = enemyHpList[enemy_count];
                     enemyText.text = enemyHp.ToString();
@@ -118,10 +116,10 @@ public class Enemy_Spawner : MonoBehaviour
         return enemyList.Count == 0;
     }
 
-    // BigInteger 범위 내에서 랜덤 값 생성
+    
     private BigInteger RandomBigInteger(BigInteger min, BigInteger max)
     {
-        // Random.Range는 int까지만 지원하므로 BigInteger 범위일 때는 직접 처리
+        
         BigInteger range = max - min + 1;
 
         byte[] bytes = range.ToByteArray();
