@@ -2,11 +2,15 @@ using UnityEngine;
 
 public class Enemy_Movement : MonoBehaviour
 {
-    public float speed=5.0f;
+    public float speed;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(gameObject);
+        if(collision.CompareTag("Ground"))
+        {
+            Destroy(gameObject);
+        }
+        
     }
     private void Update()
     {

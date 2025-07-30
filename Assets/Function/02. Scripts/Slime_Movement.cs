@@ -1,18 +1,8 @@
 using UnityEngine;
-using TMPro;
 
 public class Slime_Movement : MonoBehaviour
 {
     private Vector2 mousePos;
-
-    [SerializeField] private TMP_Text hpText;
-
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
