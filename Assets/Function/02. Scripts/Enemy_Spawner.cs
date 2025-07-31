@@ -13,7 +13,29 @@ public class Enemy_Spawner : MonoBehaviour
     public float enemySpeed = 5.0f;
     public float speedTimer = 0f;
 
-    IEnumerator Start()
+    public Coroutine spawnCoroutine;
+
+    private void Start()
+    {
+        //StartSpawning();
+    }
+
+    public void StartSpawning()
+    {
+        if (spawnCoroutine == null)
+            spawnCoroutine = StartCoroutine(SpawnEnemies());
+    }
+
+    public void StopSpawning()
+    {
+        if(spawnCoroutine != null)
+        {
+            StopCoroutine(spawnCoroutine);
+            spawnCoroutine = null;
+        }
+    }
+
+    public IEnumerator SpawnEnemies()
     {
         while (true)
         {

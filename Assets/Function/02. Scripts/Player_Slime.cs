@@ -18,10 +18,10 @@ public class PlayerSlime : MonoBehaviour
 
         double enemyHp = double.Parse(enemyHpText.text);
 
-        if (playerHp < enemyHp)
+        if (playerHp <= enemyHp)
         {
-            
-            Destroy(gameObject);
+            FindObjectOfType<GameStartManager>().KeepGame();
+            gameObject.SetActive(false);
         }
         else
         {

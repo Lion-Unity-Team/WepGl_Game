@@ -8,6 +8,11 @@ public class Slime_Movement : MonoBehaviour
     private Vector2 mousePos;
     private bool canMove=true;
 
+    private void OnEnable()
+    {
+        canMove = true;
+    }
+
     void Update()
     {
         if (!canMove)
