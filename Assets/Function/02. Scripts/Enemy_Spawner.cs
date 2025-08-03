@@ -76,7 +76,7 @@ public class Enemy_Spawner : MonoBehaviour
                 if (!spawn[enemy_Pos])
                 {
                     spawn[enemy_Pos] = true;
-                    GameObject enemy = Instantiate(enemy_Prefab, new UnityEngine.Vector2(-2 + 2 * enemy_Pos, 7), UnityEngine.Quaternion.identity);
+                    GameObject enemy = Instantiate(enemy_Prefab, new UnityEngine.Vector3(-2 + 2 * enemy_Pos, 7, -1), UnityEngine.Quaternion.identity);
 
                     
                     Enemy_Movement enemyscript = enemy.GetComponent<Enemy_Movement>();

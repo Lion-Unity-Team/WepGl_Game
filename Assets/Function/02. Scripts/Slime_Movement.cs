@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Slime_Movement : MonoBehaviour
 {
     private Vector2 mousePos;
-    private bool canMove=true;
+    public bool canMove=true;
 
     private void OnEnable()
     {
@@ -15,8 +16,9 @@ public class Slime_Movement : MonoBehaviour
 
     void Update()
     {
-        if (!canMove)
-            return;
+        if (!canMove) return; //UI켜져있을때 클릭 무시
+
+        if (EventSystem.current.IsPointerOverGameObject()) return;  //UI위 클릭은 이동무시
 
         if (Input.GetMouseButtonDown(0))
         {

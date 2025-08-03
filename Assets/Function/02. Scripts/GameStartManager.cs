@@ -6,28 +6,24 @@ public class GameStartManager : MonoBehaviour
     public Enemy_Spawner enemyspawner;
     public GameObject GameOver;
     public GameObject StartWindow;
-    public GameObject EndWindow;
 
-    private void Start()
+    private void Start()        //게임이시작하면
     {
-        player.SetActive(false);
-        enemyspawner.StopSpawning();
-        GameOver.SetActive(false);
-        StartWindow.SetActive(true);
+        player.SetActive(false);        //일단플레이어숨김
+        enemyspawner.StopSpawning();    //일단적생성정지
+        GameOver.SetActive(false);      //게임오버UI숨김
+        StartWindow.SetActive(true);    //게임시작UI켜기
     }
 
-    public void StartGame()
+    public void StartGame()     //게임시작
     {
-        player.SetActive(true);
-
-        enemyspawner.StartSpawning();
+        player.SetActive(true);     // 플레이어등장  
+        enemyspawner.StartSpawning(); // 적생성시작
     }
 
-    public void KeepGame()
+    public void EndGame()
     {
-        
-        GameOver.SetActive(true);
-        EndWindow.SetActive(true);
-        enemyspawner.StopSpawning();
+        GameOver.SetActive(true);   // 게임오버UI켜짐
+        enemyspawner.StopSpawning();    // 적생성정지
     }
 }

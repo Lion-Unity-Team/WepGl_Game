@@ -4,7 +4,7 @@ using TMPro;
 public class PlayerSlime : MonoBehaviour
 {
     public TMP_Text playerHpText;
-    private double playerHp;
+    public double playerHp;
 
     private void Start()
     {
@@ -20,7 +20,8 @@ public class PlayerSlime : MonoBehaviour
 
         if (playerHp <= enemyHp)
         {
-            FindObjectOfType<GameStartManager>().KeepGame();
+            FindObjectOfType<GameStartManager>().EndGame();
+            FindObjectOfType<GameOverManager>().Score();
             gameObject.SetActive(false);
         }
         else
