@@ -18,13 +18,13 @@ public class PlayerSlime : MonoBehaviour
 
         double enemyHp = double.Parse(enemyHpText.text);
 
-        if (playerHp <= enemyHp)
+        if (playerHp <= enemyHp) //플레이어사망시
         {
             FindObjectOfType<GameStartManager>().EndGame();
             FindObjectOfType<GameOverManager>().Score();
             gameObject.SetActive(false);
         }
-        else
+        else //적흡수시
         {
            
             playerHp += enemyHp;

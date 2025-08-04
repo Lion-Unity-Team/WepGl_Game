@@ -156,4 +156,12 @@ public class Enemy_Spawner : MonoBehaviour
 
         return min + result;
     }
+
+    
+
+    public float GetCurrentSpeed()
+    {
+        return enemySpeed;
+    }
+
 }

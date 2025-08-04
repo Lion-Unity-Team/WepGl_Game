@@ -13,17 +13,20 @@ public class GameStartManager : MonoBehaviour
         enemyspawner.StopSpawning();    //일단적생성정지
         GameOver.SetActive(false);      //게임오버UI숨김
         StartWindow.SetActive(true);    //게임시작UI켜기
+        //이미 배경은 멈춰있음
     }
 
-    public void StartGame()     //게임시작
+    public void StartGame()     //게임시작버튼누르면
     {
         player.SetActive(true);     // 플레이어등장  
         enemyspawner.StartSpawning(); // 적생성시작
+        FindObjectOfType<PropsMovement>().StartMoving(); // 배경 움직임 시작
     }
 
     public void EndGame()
     {
         GameOver.SetActive(true);   // 게임오버UI켜짐
         enemyspawner.StopSpawning();    // 적생성정지
+        FindObjectOfType<PropsMovement>().StopMoving(); // 배경 움직임 정지
     }
 }
