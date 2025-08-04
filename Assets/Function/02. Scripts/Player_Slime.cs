@@ -3,12 +3,14 @@ using TMPro;
 
 public class PlayerSlime : MonoBehaviour
 {
+    private Animator _anime;
     public TMP_Text playerHpText;
     public double playerHp;
 
     private void Start()
     {
         playerHp = double.Parse(playerHpText.text);
+        _anime = GetComponentInChildren<Animator>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -18,13 +20,14 @@ public class PlayerSlime : MonoBehaviour
 
         double enemyHp = double.Parse(enemyHpText.text);
 
-        if (playerHp <= enemyHp) //ÇÃ·¹ÀÌ¾î»ç¸Á½Ã
+        if (playerHp <= enemyHp) //ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ï¿½ï¿½ï¿½ï¿½
         {
             FindObjectOfType<GameStartManager>().EndGame();
             FindObjectOfType<GameOverManager>().Score();
-            gameObject.SetActive(false);
+            _anime.SetTrigger("Death");
+            // gameObject.SetActive(false);
         }
-        else //ÀûÈí¼ö½Ã
+        else //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         {
            
             playerHp += enemyHp;
