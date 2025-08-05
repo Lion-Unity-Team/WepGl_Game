@@ -16,7 +16,12 @@ public class SoundManager : MonoBehaviour
     
     [SerializeField] private Slider bgm_Slider;
     [SerializeField] private Slider sfx_Slider;
+
+    [SerializeField] private GameObject bgm_FillArea;
+    [SerializeField] private GameObject sfx_FillArea;
     
+    private bool isBgmMute = false;
+    private bool isSfxMute = false;
     
     // 싱글톤 기법을 사용
     private void Awake()
@@ -47,37 +52,19 @@ public class SoundManager : MonoBehaviour
             bgm_Player.volume = PlayerPrefs.GetFloat("BGMVolume");
             sfx_Player.volume = PlayerPrefs.GetFloat("SFXVolume");
             
+            
             sfx_Player.mute = true;
-            // 수정해야함
             sfx_Slider.value = sfx_Player.volume * sfx_Slider.maxValue;
             bgm_Slider.value = bgm_Player.volume * bgm_Slider.maxValue; 
             
-            if (PlayerPrefs.GetString("BGMMute") == "true")
-            {
-                bgm_Button[0].gameObject.SetActive(true); // OFF
-                bgm_Button[1].gameObject.SetActive(false); // ON
-                bgm_Slider.interactable = false;
-            }
-            else
-            {
-                bgm_Player.mute = false;
-                bgm_Button[0].gameObject.SetActive(false); // OFF
-                bgm_Button[1].gameObject.SetActive(true); // ON
-            }
+            isBgmMute = PlayerPrefs.GetInt("BGMMute") == 1;
+            isSfxMute = PlayerPrefs.GetInt("SFXMute") == 1;
+
+            Debug.Log($"isBgmMute : {isBgmMute}");
+            Debug.Log($"isSfxMute : {isSfxMute}");
             
-            if (PlayerPrefs.GetString("SFXMute") == "true")
-            {
-                sfx_Player.mute = true;
-                sfx_Button[0].gameObject.SetActive(true); // OFF
-                sfx_Button[1].gameObject.SetActive(false); // ON
-                bgm_Slider.interactable = false;
-            }
-            else
-            {
-                sfx_Player.mute = false;
-                sfx_Button[0].gameObject.SetActive(false); // OFF
-                sfx_Button[1].gameObject.SetActive(true); // ON
-            }
+            BgmMute(isBgmMute);
+            SfxMute(isSfxMute);
             
         }
     }
@@ -88,11 +75,11 @@ public class SoundManager : MonoBehaviour
         
         if (bgm_Player.mute)
         {
-            PlayerPrefs.SetString("BGMMute", "true");
+            PlayerPrefs.SetInt("BGMMute", 1);
         }
         else
         {
-            PlayerPrefs.SetString("BGMMute", "false");
+            PlayerPrefs.SetInt("BGMMute", 0);
         }
     }
     
@@ -102,11 +89,11 @@ public class SoundManager : MonoBehaviour
         
         if (sfx_Player.mute)
         {
-            PlayerPrefs.SetString("SFXMute", "true");
+            PlayerPrefs.SetInt("SFXMute", 1);
         }
         else
         {
-            PlayerPrefs.SetString("SFXMute", "false");
+            PlayerPrefs.SetInt("SFXMute", 0);
         }
     }
 
@@ -134,7 +121,50 @@ public class SoundManager : MonoBehaviour
 
         Debug.Log($"{clipName} not found");
     }
-    
+
+    public void BgmMute(bool isMute) // 개선 가능할지도
+    {
+        if (isMute)
+        {
+            bgm_Player.mute = true;
+            bgm_Slider.interactable = false;
+            bgm_FillArea.SetActive(false);
+            
+            bgm_Button[0].gameObject.SetActive(true); // OFF
+            bgm_Button[1].gameObject.SetActive(false); // ON
+        }
+        else
+        {
+            bgm_Player.mute = false;
+            bgm_Slider.interactable = true;
+            bgm_FillArea.SetActive(true);
+            
+            bgm_Button[0].gameObject.SetActive(false); // OFF
+            bgm_Button[1].gameObject.SetActive(true); // ON
+        }
+    }
+
+    public void SfxMute(bool isMute)
+    {
+        if (isMute)
+        {
+            sfx_Player.mute = true;
+            sfx_Slider.interactable = false;
+            sfx_FillArea.SetActive(false);
+            
+            sfx_Button[0].gameObject.SetActive(true); // OFF
+            sfx_Button[1].gameObject.SetActive(false); // ON
+        }
+        else
+        {
+            sfx_Player.mute = false;
+            sfx_Slider.interactable = true;
+            sfx_FillArea.SetActive(true);
+            
+            sfx_Button[0].gameObject.SetActive(false); // OFF
+            sfx_Button[1].gameObject.SetActive(true); // ON
+        }
+    }
 
 
     public void SoundSave()

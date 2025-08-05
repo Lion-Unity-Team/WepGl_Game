@@ -770,7 +770,7 @@ GameObject:
   m_Component:
   - component: {fileID: 211021792}
   m_Layer: 5
-  m_Name: Fill Area
+  m_Name: '[Fill Area] Sfx'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3495,6 +3495,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c1b67524fff0ece4f9e5106ed5e868c3, type: 3}
   bgm_Slider: {fileID: 1565734581}
   sfx_Slider: {fileID: 306655782}
+  bgm_FillArea: {fileID: 1450208634}
+  sfx_FillArea: {fileID: 211021791}
 --- !u!1 &869211035
 GameObject:
   m_ObjectHideFlags: 0
@@ -5079,7 +5081,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1450208635}
   m_Layer: 5
-  m_Name: Fill Area
+  m_Name: '[Fill Area] Bgm'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

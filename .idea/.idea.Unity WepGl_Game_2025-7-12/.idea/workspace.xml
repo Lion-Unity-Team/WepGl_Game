@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ceeb083d-8a9e-4b0e-98a2-697c80ac4a6d" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity WepGl_Game_2025-7-12/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity WepGl_Game_2025-7-12/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Function/02. Scripts/GameOverManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Function/02. Scripts/GameOverManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Function/02. Scripts/Player_Slime.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Function/02. Scripts/Player_Slime.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game Scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UI/02. Scripts/SoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/02. Scripts/SoundManager.cs" afterDir="false" />
     </list>
@@ -126,6 +124,8 @@
       <workItem from="1753867354572" duration="2000" />
       <workItem from="1753867582510" duration="188000" />
       <workItem from="1754379154323" duration="10059000" />
+      <workItem from="1754395575153" duration="447000" />
+      <workItem from="1754405011712" duration="2934000" />
     </task>
     <servers />
   </component>
