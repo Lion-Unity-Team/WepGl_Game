@@ -490,6 +490,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 830661850}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: SoundSave
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &86430766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -729,7 +741,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8580378784410186006, guid: 28d6c5d67514aec4fa77f06370056081,
+  m_Sprite: {fileID: -7635131891296033614, guid: 28d6c5d67514aec4fa77f06370056081,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -894,7 +906,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -20, y: 0}
-  m_SizeDelta: {x: 115, y: 32.5}
+  m_SizeDelta: {x: 100, y: 32.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &302693729
 GameObject:
@@ -1007,9 +1019,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1904870420}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 9
+  m_MaxValue: 8
   m_WholeNumbers: 1
-  m_Value: 5
+  m_Value: 4
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -1110,7 +1122,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.5555556
+  m_FillAmount: 0.5
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -2006,7 +2018,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -20, y: 0}
-  m_SizeDelta: {x: 115, y: 32.5}
+  m_SizeDelta: {x: 100, y: 32.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &567793190
 GameObject:
@@ -2147,7 +2159,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8580378784410186006, guid: 28d6c5d67514aec4fa77f06370056081,
+  m_Sprite: {fileID: -7635131891296033614, guid: 28d6c5d67514aec4fa77f06370056081,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -3764,8 +3776,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -160, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -170, y: 0}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1045814620
 MonoBehaviour:
@@ -4230,8 +4242,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -160, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -170, y: 0}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1213208216
 MonoBehaviour:
@@ -4457,8 +4469,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 530304268}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5555556, y: 0}
-  m_AnchorMax: {x: 0.5555556, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 40, y: 57.5}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5403,9 +5415,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1335934843}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 9
+  m_MaxValue: 8
   m_WholeNumbers: 1
-  m_Value: 5
+  m_Value: 4
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -5651,7 +5663,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.5555556
+  m_FillAmount: 0.5
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -7182,8 +7194,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 263745502}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5555556, y: 0}
-  m_AnchorMax: {x: 0.5555556, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 40, y: 57.5}
   m_Pivot: {x: 0.5, y: 0.5}

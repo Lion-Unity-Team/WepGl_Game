@@ -8,7 +8,7 @@ public class GameOverManager : MonoBehaviour
     public PlayerSlime playerSlime;
 
     private const string BestScoreKey = "BestPlayerHP";
-
+    
     private void Start()
     {
         if (PlayerPrefs.HasKey("BestPlayerHP"))
@@ -29,7 +29,7 @@ public class GameOverManager : MonoBehaviour
         double bestHp = PlayerPrefs.HasKey(BestScoreKey)
             ? double.Parse(PlayerPrefs.GetString(BestScoreKey)) : currentHP;
 
-        if(currentHP > bestHp)
+        if(currentHP >= bestHp)
         {
             bestHp = currentHP;
             PlayerPrefs.SetString(BestScoreKey, bestHp.ToString());

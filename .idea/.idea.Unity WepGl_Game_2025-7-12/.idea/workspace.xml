@@ -6,28 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ceeb083d-8a9e-4b0e-98a2-697c80ac4a6d" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity WepGl_Game_2025-7-12/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity WepGl_Game_2025-7-12/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Function/ArtScene.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Function/ArtScene/Art.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Function/ArtScene/Art.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Function/ArtScene/Enemy.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Function/ArtScene/Enemy.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Function/ArtScene/Enemy.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Function/ArtScene/Enemy.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Function/ArtScene/Green Idle.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Function/ArtScene/Green Idle.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Function/ArtScene/Map.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Function/ArtScene/Map.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Function/ArtScene/Slime.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Function/ArtScene/Slime.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Function/ArtScene/Slime.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Function/ArtScene/Slime/Green Death (No flash) - Animation.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Function/ArtScene/Slime/Green Death (No flash) - Animation.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Function/ArtScene/Slime/Green Idle - Animation.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Function/ArtScene/Slime/Green Idle - Animation.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Function/ArtScene/Slime/Slime.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Function/ArtScene/Slime/Slime.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Function/ArtScene/Spawner.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Function/ArtScene/Spawner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Function/02. Scripts/GameOverManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Function/02. Scripts/GameOverManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Function/02. Scripts/Player_Slime.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Function/02. Scripts/Player_Slime.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/02. Scripts/SoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/02. Scripts/SoundManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,21 +30,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Unity 에디터에 연결.Unity 에디터에 연결">
     <configuration name="유닛 테스트(배치 모드)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.48f1\Editor\Unity.exe" />
@@ -143,6 +125,7 @@
       <workItem from="1753261656120" duration="224000" />
       <workItem from="1753867354572" duration="2000" />
       <workItem from="1753867582510" duration="188000" />
+      <workItem from="1754379154323" duration="10059000" />
     </task>
     <servers />
   </component>

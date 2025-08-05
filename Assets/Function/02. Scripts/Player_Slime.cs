@@ -20,14 +20,14 @@ public class PlayerSlime : MonoBehaviour
 
         double enemyHp = double.Parse(enemyHpText.text);
 
-        if (playerHp <= enemyHp) //�÷��̾�����
+        if (playerHp <= enemyHp) //?÷????????
         {
             FindObjectOfType<GameStartManager>().EndGame();
             FindObjectOfType<GameOverManager>().Score();
             _anime.SetTrigger("Death");
             // gameObject.SetActive(false);
         }
-        else //�������
+        else //???????
         {
            
             playerHp += enemyHp;
