@@ -6829,6 +6829,23 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5219563534186862793, guid: 1e41fe28a90f9f847a9361e7b84141f8,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 9e46132a984fe9447b220481c3c953e9,
+        type: 2}
+    - target: {fileID: 5219563534186862793, guid: 1e41fe28a90f9f847a9361e7b84141f8,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -413766752884843024, guid: 9e46132a984fe9447b220481c3c953e9,
+        type: 2}
+    - target: {fileID: 5219563534186862793, guid: 1e41fe28a90f9f847a9361e7b84141f8,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5286244672749752333, guid: 1e41fe28a90f9f847a9361e7b84141f8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7701,9 +7718,9 @@ Canvas:
   m_GameObject: {fileID: 2106332860}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 519420031}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -7713,7 +7730,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 30
   m_TargetDisplay: 0
 --- !u!224 &2106332864
 RectTransform:
