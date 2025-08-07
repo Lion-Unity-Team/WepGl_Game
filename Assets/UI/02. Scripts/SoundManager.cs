@@ -4,7 +4,7 @@ using UnityEngine.UI;
 // 게임의 사운드를 관리하는 스크립트
 public class SoundManager : MonoBehaviour
 {
-    static SoundManager instance;
+    public static SoundManager instance;
     
     [SerializeField] private AudioSource bgm_Player;
     [SerializeField] private AudioSource sfx_Player;
@@ -47,25 +47,21 @@ public class SoundManager : MonoBehaviour
         
         if (PlayerPrefs.HasKey("BGMVolume") && PlayerPrefs.HasKey("SFXVolume"))
         {
-            Debug.Log("불러옴");
-            
             bgm_Player.volume = PlayerPrefs.GetFloat("BGMVolume");
             sfx_Player.volume = PlayerPrefs.GetFloat("SFXVolume");
             
-            
-            sfx_Player.mute = true;
             sfx_Slider.value = sfx_Player.volume * sfx_Slider.maxValue;
             bgm_Slider.value = bgm_Player.volume * bgm_Slider.maxValue; 
             
             isBgmMute = PlayerPrefs.GetInt("BGMMute") == 1;
             isSfxMute = PlayerPrefs.GetInt("SFXMute") == 1;
-
-            Debug.Log($"isBgmMute : {isBgmMute}");
-            Debug.Log($"isSfxMute : {isSfxMute}");
             
             BgmMute(isBgmMute);
             SfxMute(isSfxMute);
-            
+
+            bgm_Slider.onValueChanged.AddListener((temp) => SfxPlay("UI_Button"));
+            sfx_Slider.onValueChanged.AddListener((temp) => SfxPlay("UI_Button"));
+
         }
     }
 
@@ -108,7 +104,7 @@ public class SoundManager : MonoBehaviour
     }
     
     // 효과음을 출력하는 함수
-    public void SFXPlay(string clipName)
+    public void SfxPlay(string clipName)
     {
         foreach (var clip in sfx_Clips)
         {

@@ -29,6 +29,8 @@ public class Slime_Movement : MonoBehaviour
                 transform.position = new Vector2(-2, -4);
             else if (mousePos.x < 1 && mousePos.x > -1)
                 transform.position = new Vector2(0, -4);
+            
+            SoundManager.instance.SfxPlay("Move");
         }
     }
 

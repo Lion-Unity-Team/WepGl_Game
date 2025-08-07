@@ -41,6 +41,7 @@ public class PlayerSlime : MonoBehaviour
             playerHpText.text = playerHp.ToString();
             Destroy(collision.gameObject);
         }
+        SoundManager.instance.SfxPlay("Eat");
     }
 
     void Update()
