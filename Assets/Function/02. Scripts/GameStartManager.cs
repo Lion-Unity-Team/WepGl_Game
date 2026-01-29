@@ -29,7 +29,7 @@ public class GameStartManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI countdownText;
     [SerializeField] private Slime_Movement _movement;
     
-    private void Start()        //�����̽����ϸ�
+    private void Start()       
     {
         _gameEndCanvasGroup.alpha = 1;
         _gameEndRectTransform.localScale = Vector3.one;
@@ -42,13 +42,13 @@ public class GameStartManager : MonoBehaviour
         });
         
         KeepPlay.onClick.AddListener(CountClick);
-        enemyspawner.StopSpawning();    //�ϴ�����������
-        GameOver.SetActive(false);      //���ӿ���UI����
-        StartWindow.SetActive(true);    //���ӽ���UI�ѱ�
-        //�̹� ����� ��������
+        enemyspawner.StopSpawning();    
+        GameOver.SetActive(false);     
+        StartWindow.SetActive(true);   
+        
 
-        _playerAnime = player.GetComponentInChildren<Animator>(); // �÷��̾� �ִϸ��̼�
-        _playerAnime.speed = 0;         // �÷��̾� �̵� ����
+        _playerAnime = player.GetComponentInChildren<Animator>();
+        _playerAnime.speed = 0;        
         _playerRunKey = "IsRun";
         _PlayerWakeUpKey = "WakeUp";
         CloudSpawner.isPlay = false;
@@ -58,13 +58,13 @@ public class GameStartManager : MonoBehaviour
         
         if (PlayerPrefs.HasKey("BestPlayerHP"))
         {
-            //Debug.Log("�ε�� �ְ� ����: " + PlayerPrefs.GetString("BestPlayerHP"));
+            
             SkinManager.instance.LoadData();
             PlayerManager.instance.LoadData();
         }
         else
         {
-            //Debug.Log("�ְ� ���� ���� player, skin �ʱ�ȭ");
+            
             InitData();
         }
     }
@@ -88,11 +88,11 @@ public class GameStartManager : MonoBehaviour
         }
     }
 
-    public void StartGame()     //���ӽ��۹�ư������
+    public void StartGame()     
     {
-        _playerAnime.speed = 1;     // �÷��̾� �̵� ����
+        _playerAnime.speed = 1;     
         _playerAnime.SetBool(_playerRunKey, true);
-        enemyspawner.StartSpawning(); // ����������
+        enemyspawner.StartSpawning(); 
         Ground.canMoving = true;
         
         _gameStartCanvasGroup.alpha = 1;
@@ -154,14 +154,14 @@ public class GameStartManager : MonoBehaviour
         CloudSpawner.isPlay = true;
         
         StaminaManager.instance.StaminaChange(70);
-        StaminaManager.instance.StaminaPlus(0); // ���׹̳� �ٸ� ���� �ϱ� ����
+        StaminaManager.instance.StaminaPlus(0); 
         
-        _playerAnime.SetTrigger(_PlayerWakeUpKey);  //�Ͼ�µ���
-        _playerAnime.SetBool(_playerRunKey, true);  //�޸��µ���
-        enemyspawner.StartSpawning(); // ����������
+        _playerAnime.SetTrigger(_PlayerWakeUpKey);  
+        _playerAnime.SetBool(_playerRunKey, true); 
+        enemyspawner.StartSpawning();
         Ground.canMoving = true;
         
-        foreach (var particle in particles) // ��ƼŬ ��� ����
+        foreach (var particle in particles) 
         {
             particle.Play();
         }
@@ -177,11 +177,11 @@ public class GameStartManager : MonoBehaviour
         _gameEndCanvasGroup.DOFade(1, 0.3f).SetEase(Ease.Linear).SetUpdate(UpdateType.Normal, true);
         _gameEndRectTransform.DOScale(1, 0.3f).SetEase(Ease.OutBack).SetUpdate(UpdateType.Normal, true);
         
-        GameOver.SetActive(true);   // ���ӿ���UI����
-        enemyspawner.StopSpawning();    // ����������
+        GameOver.SetActive(true);   
+        enemyspawner.StopSpawning();   
         Ground.canMoving = false;
         
-        foreach (var particle in particles) // ��ƼŬ ��� �Ͻ� ����
+        foreach (var particle in particles) 
         {
             particle.Pause();
         }
