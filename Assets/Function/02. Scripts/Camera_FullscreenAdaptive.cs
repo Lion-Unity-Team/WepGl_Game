@@ -25,6 +25,7 @@ public class Camera_FullscreenAdaptive : MonoBehaviour
 
     void Apply()
     {
+        Debug.Log(cam.orthographicSize);
         float targetAspect = referenceWidth / referenceHeight;
         float deviceAspect = (float)Screen.width / Screen.height;
 

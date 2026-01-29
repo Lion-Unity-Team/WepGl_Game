@@ -31,9 +31,9 @@ public class PlayerSlime : MonoBehaviour
         _deathAnimeKey = "Death";
         _runAnimeKey = "IsRun";
         
-        Debug.Log(PlayerManager.instance.PlayerData.killSlime);
-        Debug.Log(PlayerManager.instance.PlayerData.eatFruit);
-        Debug.Log(PlayerManager.instance.PlayerData.playTime1);
+        //Debug.Log(PlayerManager.instance.PlayerData.killSlime);
+        //Debug.Log(PlayerManager.instance.PlayerData.eatFruit);
+        //Debug.Log(PlayerManager.instance.PlayerData.playTime1);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
