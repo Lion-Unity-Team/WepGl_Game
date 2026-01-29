@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -34,6 +35,52 @@ public class SoundManager : MonoBehaviour
         }
         
     }
+
+    #region Background event
+    private void OnEnable()
+    {
+        try
+        {
+            bool current = AppsInToss.AITVisibilityHelper.IsVisible;
+            ApplyVisibility(current);
+        }
+        catch (Exception)
+        {
+            // SDK 호출 실패 시 기본 동작: 재생 유지
+        }
+
+        // 이벤트 구독
+        AppsInToss.AITVisibilityHelper.OnVisibilityChanged += OnVisibilityChanged;
+    }
+
+    private void OnDisable()
+    {
+        AppsInToss.AITVisibilityHelper.OnVisibilityChanged -= OnVisibilityChanged;
+    }
+
+    private void OnVisibilityChanged(bool isVisible)
+    {
+        Debug.Log($"[BgmMinimal] Visibility changed -> {isVisible}");
+        ApplyVisibility(isVisible);
+    }
+    
+    public void SetVisibility(bool isVisible) => ApplyVisibility(isVisible);
+
+    private void ApplyVisibility(bool isVisible)
+    {
+        if (bgm_Player == null) return;
+
+        if (isVisible)
+        {
+            if (bgm_Player.time > 0f && !bgm_Player.isPlaying) bgm_Player.UnPause();
+            else if (!bgm_Player.isPlaying) bgm_Player.Play();
+        }
+        else
+        {
+            bgm_Player.Pause();
+        }
+    }
+    #endregion
 
     private void Start()
     {
