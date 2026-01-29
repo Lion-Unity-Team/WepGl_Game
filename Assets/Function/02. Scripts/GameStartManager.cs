@@ -25,7 +25,7 @@ public class GameStartManager : MonoBehaviour
     [SerializeField] private RectTransform _gameStartTransform;
     
 
-    private void Start()        //게임이시작하면
+    private void Start()        //게임이 시작하면
     {
         _gameEndCanvasGroup.alpha = 1;
         _gameEndRectTransform.localScale = Vector3.one;
@@ -54,13 +54,13 @@ public class GameStartManager : MonoBehaviour
         
         if (PlayerPrefs.HasKey("BestPlayerHP"))
         {
-            Debug.Log("로드된 최고 점수: " + PlayerPrefs.GetString("BestPlayerHP"));
+            //Debug.Log("로드된 최고 점수: " + PlayerPrefs.GetString("BestPlayerHP"));
             SkinManager.instance.LoadData();
             PlayerManager.instance.LoadData();
         }
         else
         {
-            Debug.Log("최고 점수 없음 player, skin 초기화");
+            //Debug.Log("최고 점수 없음 player, skin 초기화");
             InitData();
         }
     }
