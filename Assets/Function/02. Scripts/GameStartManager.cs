@@ -29,7 +29,7 @@ public class GameStartManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI countdownText;
     [SerializeField] private Slime_Movement _movement;
     
-    private void Start()        //°ÔÀÓÀÌ½ÃÀÛÇÏ¸é
+    private void Start()        //ï¿½ï¿½ï¿½ï¿½ï¿½Ì½ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½
     {
         _gameEndCanvasGroup.alpha = 1;
         _gameEndRectTransform.localScale = Vector3.one;
@@ -42,13 +42,13 @@ public class GameStartManager : MonoBehaviour
         });
         
         KeepPlay.onClick.AddListener(CountClick);
-        enemyspawner.StopSpawning();    //ÀÏ´ÜÀû»ý¼ºÁ¤Áö
-        GameOver.SetActive(false);      //°ÔÀÓ¿À¹öUI¼û±è
-        StartWindow.SetActive(true);    //°ÔÀÓ½ÃÀÛUIÄÑ±â
-        //ÀÌ¹Ì ¹è°æÀº ¸ØÃçÀÖÀ½
+        enemyspawner.StopSpawning();    //ï¿½Ï´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        GameOver.SetActive(false);      //ï¿½ï¿½ï¿½Ó¿ï¿½ï¿½ï¿½UIï¿½ï¿½ï¿½ï¿½
+        StartWindow.SetActive(true);    //ï¿½ï¿½ï¿½Ó½ï¿½ï¿½ï¿½UIï¿½Ñ±ï¿½
+        //ï¿½Ì¹ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-        _playerAnime = player.GetComponentInChildren<Animator>(); // ÇÃ·¹ÀÌ¾î ¾Ö´Ï¸ÞÀÌ¼Ç
-        _playerAnime.speed = 0;         // ÇÃ·¹ÀÌ¾î ÀÌµ¿ ¸ØÃã
+        _playerAnime = player.GetComponentInChildren<Animator>(); // ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ ï¿½Ö´Ï¸ï¿½ï¿½Ì¼ï¿½
+        _playerAnime.speed = 0;         // ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ ï¿½Ìµï¿½ ï¿½ï¿½ï¿½ï¿½
         _playerRunKey = "IsRun";
         _PlayerWakeUpKey = "WakeUp";
         CloudSpawner.isPlay = false;
@@ -58,13 +58,13 @@ public class GameStartManager : MonoBehaviour
         
         if (PlayerPrefs.HasKey("BestPlayerHP"))
         {
-            Debug.Log("·ÎµåµÈ ÃÖ°í Á¡¼ö: " + PlayerPrefs.GetString("BestPlayerHP"));
+            //Debug.Log("ï¿½Îµï¿½ï¿½ ï¿½Ö°ï¿½ ï¿½ï¿½ï¿½ï¿½: " + PlayerPrefs.GetString("BestPlayerHP"));
             SkinManager.instance.LoadData();
             PlayerManager.instance.LoadData();
         }
         else
         {
-            Debug.Log("ÃÖ°í Á¡¼ö ¾øÀ½ player, skin ÃÊ±âÈ­");
+            //Debug.Log("ï¿½Ö°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ player, skin ï¿½Ê±ï¿½È­");
             InitData();
         }
     }
@@ -88,11 +88,11 @@ public class GameStartManager : MonoBehaviour
         }
     }
 
-    public void StartGame()     //°ÔÀÓ½ÃÀÛ¹öÆ°´©¸£¸é
+    public void StartGame()     //ï¿½ï¿½ï¿½Ó½ï¿½ï¿½Û¹ï¿½Æ°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     {
-        _playerAnime.speed = 1;     // ÇÃ·¹ÀÌ¾î ÀÌµ¿ ½ÃÀÛ
+        _playerAnime.speed = 1;     // ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ ï¿½Ìµï¿½ ï¿½ï¿½ï¿½ï¿½
         _playerAnime.SetBool(_playerRunKey, true);
-        enemyspawner.StartSpawning(); // Àû»ý¼º½ÃÀÛ
+        enemyspawner.StartSpawning(); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         Ground.canMoving = true;
         
         _gameStartCanvasGroup.alpha = 1;
@@ -154,14 +154,14 @@ public class GameStartManager : MonoBehaviour
         CloudSpawner.isPlay = true;
         
         StaminaManager.instance.StaminaChange(70);
-        StaminaManager.instance.StaminaPlus(0); // ½ºÅ×¹Ì³Ê ¹Ù¸¦ °»½Å ÇÏ±â À§ÇÔ
+        StaminaManager.instance.StaminaPlus(0); // ï¿½ï¿½ï¿½×¹Ì³ï¿½ ï¿½Ù¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½
         
-        _playerAnime.SetTrigger(_PlayerWakeUpKey);  //ÀÏ¾î³ª´Âµ¿ÀÛ
-        _playerAnime.SetBool(_playerRunKey, true);  //´Þ¸®´Âµ¿ÀÛ
-        enemyspawner.StartSpawning(); // Àû»ý¼º½ÃÀÛ
+        _playerAnime.SetTrigger(_PlayerWakeUpKey);  //ï¿½Ï¾î³ªï¿½Âµï¿½ï¿½ï¿½
+        _playerAnime.SetBool(_playerRunKey, true);  //ï¿½Þ¸ï¿½ï¿½Âµï¿½ï¿½ï¿½
+        enemyspawner.StartSpawning(); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         Ground.canMoving = true;
         
-        foreach (var particle in particles) // ÆÄÆ¼Å¬ ¸ðµÎ ½ÃÀÛ
+        foreach (var particle in particles) // ï¿½ï¿½Æ¼Å¬ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         {
             particle.Play();
         }
@@ -177,11 +177,11 @@ public class GameStartManager : MonoBehaviour
         _gameEndCanvasGroup.DOFade(1, 0.3f).SetEase(Ease.Linear).SetUpdate(UpdateType.Normal, true);
         _gameEndRectTransform.DOScale(1, 0.3f).SetEase(Ease.OutBack).SetUpdate(UpdateType.Normal, true);
         
-        GameOver.SetActive(true);   // °ÔÀÓ¿À¹öUIÄÑÁü
-        enemyspawner.StopSpawning();    // Àû»ý¼ºÁ¤Áö
+        GameOver.SetActive(true);   // ï¿½ï¿½ï¿½Ó¿ï¿½ï¿½ï¿½UIï¿½ï¿½ï¿½ï¿½
+        enemyspawner.StopSpawning();    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         Ground.canMoving = false;
         
-        foreach (var particle in particles) // ÆÄÆ¼Å¬ ¸ðµÎ ÀÏ½Ã Á¤Áö
+        foreach (var particle in particles) // ï¿½ï¿½Æ¼Å¬ ï¿½ï¿½ï¿½ ï¿½Ï½ï¿½ ï¿½ï¿½ï¿½ï¿½
         {
             particle.Pause();
         }

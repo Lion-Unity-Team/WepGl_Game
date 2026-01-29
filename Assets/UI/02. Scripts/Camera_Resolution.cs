@@ -9,8 +9,8 @@ public class Camera_Resolution : MonoBehaviour
         Rect rect = camera.rect;
 
         // 9 / 16 비율을 벗어날 경우 여백을 제거
-        // (현제 디스플레이 가로 / 세로) /  (고정하고 싶은 가로 / 세로)
-        float scaleheight = ((float)Screen.width / Screen.height) / ((float)9 / 16);
+        // (현재 디스플레이 가로 / 세로) /  (고정하고 싶은 가로 / 세로)
+        float scaleheight = ((float)Screen.width / Screen.height) / ((float)9 / 20);
         float scalewidth = 1f / scaleheight;
 
 

@@ -208,6 +208,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -280,6 +281,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5524650810088019038
 SpriteRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -298,6 +300,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -319,9 +323,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
+  m_MaskInteraction: 0
   m_Sprite: {fileID: -995309468256691382, guid: 61c4c39cb1615aa489d11a59e9055e0b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -332,7 +338,6 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &6653658300876268729
 Animator:
@@ -368,8 +373,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 257e06d9935753643bab43922943e542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canMove: 1
   moveDuration: 0.2
+  canMove: 1
+  UI1: {fileID: 0}
+  UI2: {fileID: 0}
+  UI3: {fileID: 0}
 --- !u!114 &5026508422720970794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -383,6 +391,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHpText: {fileID: 516643867677620081}
+  UI1: {fileID: 0}
+  OVER: {fileID: 0}
+  CLAER: {fileID: 0}
+  playTime1: 0
 --- !u!58 &2681613538982878024
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -20,8 +20,8 @@ public class PlayerSlime : MonoBehaviour
     private string _deathAnimeKey;
     private string _runAnimeKey;
 
-    private int eatFruit;
-    private int killSlime;
+    public int eatFruit;
+    public int killSlime;
 
     private void Start()
     {
@@ -30,10 +30,17 @@ public class PlayerSlime : MonoBehaviour
 
         _deathAnimeKey = "Death";
         _runAnimeKey = "IsRun";
+
         
+        Debug.Log("When Start Game");
+        Debug.Log("killSlime : ");
         Debug.Log(PlayerManager.instance.PlayerData.killSlime);
+        Debug.Log("eatFruit : ");
         Debug.Log(PlayerManager.instance.PlayerData.eatFruit);
+        Debug.Log("playTime1 : ");
         Debug.Log(PlayerManager.instance.PlayerData.playTime1);
+        Debug.Log("playTime2 : ");
+        Debug.Log(PlayerManager.instance.PlayerData.playTime2);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -62,6 +69,15 @@ public class PlayerSlime : MonoBehaviour
                 FindObjectOfType<GameOverManager>().Score();
                 _anime.SetTrigger(_deathAnimeKey);
                 _anime.SetBool(_runAnimeKey, false);
+                Debug.Log("When Over Game");
+                Debug.Log("killSlime : ");
+                Debug.Log(PlayerManager.instance.PlayerData.killSlime);
+                Debug.Log("eatFruit : ");
+                Debug.Log(PlayerManager.instance.PlayerData.eatFruit);
+                Debug.Log("playTime1 : ");
+                Debug.Log(PlayerManager.instance.PlayerData.playTime1);
+                Debug.Log("playTime2 : ");
+                Debug.Log(PlayerManager.instance.PlayerData.playTime2);
             }
             else
             {

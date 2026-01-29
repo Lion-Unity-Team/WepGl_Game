@@ -13,7 +13,7 @@ public class Ground : MonoBehaviour
     public static bool canMoving = false;
     private void Awake()
     {
-        _resetPos = new Vector3(0, 12, 0);
+        _resetPos = new Vector3(0, 18, 0);
         _originPos = transform.position;
     }
 
