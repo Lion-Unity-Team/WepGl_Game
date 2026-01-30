@@ -28,6 +28,8 @@ public class GameStartManager : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI countdownText;
     [SerializeField] private Slime_Movement _movement;
+
+    [SerializeField] private GameObject Dim;
     
     private void Start()       
     {
@@ -111,11 +113,13 @@ public class GameStartManager : MonoBehaviour
     {
         SoundManager.instance.BgmMute(true);
         SoundManager.instance.SfxMute(true);
+        Dim.SetActive(true);
         AdManager.Instance.ShowAd(() => StartCoroutine(StartCountdown()));
     }
 
     IEnumerator StartCountdown()
     {
+        Dim.SetActive(false);
         _movement.isCountdown = true;
         SoundManager.instance.BgmMute(false);
         SoundManager.instance.SfxMute(false);

@@ -104,3 +104,8 @@ InitTestScene*.unity*
 
 # WebGL Build
 webgl/
+
+# Apps in Toss Build
+ait-build/.npm-cache/
+ait-build/dist/
+ait-build/public/
