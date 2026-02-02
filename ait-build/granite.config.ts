@@ -2,7 +2,7 @@ import { defineConfig } from '@apps-in-toss/web-framework/config';
 
 //// SDK_GENERATED_START - DO NOT EDIT THIS SECTION ////
 const sdkConfig = {
-  appName: 'slime-runner',
+  appName: 'likelion-slime-runner',
   brand: {
     displayName: 'Slime Runner',
     primaryColor: '#3182F6',
