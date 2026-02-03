@@ -6,7 +6,7 @@ const sdkConfig = {
   brand: {
     displayName: 'Slime Runner',
     primaryColor: '#3182F6',
-    icon: '',
+    icon: 'https://static.toss.im/appsintoss/845/65199289-2125-4eb9-b90b-59b61d0b1396.png',
     bridgeColorMode: 'inverted',
   },
   webViewProps: {

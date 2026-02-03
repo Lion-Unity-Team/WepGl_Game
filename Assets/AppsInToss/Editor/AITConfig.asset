@@ -17,7 +17,7 @@ MonoBehaviour:
   version: 0.0.1
   description: 
   primaryColor: '#3182F6'
-  iconUrl: 
+  iconUrl: https://static.toss.im/appsintoss/845/65199289-2125-4eb9-b90b-59b61d0b1396.png
   bridgeColorMode: 0
   webViewType: 0
   allowsInlineMediaPlayback: 0
