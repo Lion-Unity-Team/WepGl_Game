@@ -4,7 +4,7 @@ import { defineConfig } from '@apps-in-toss/web-framework/config';
 const sdkConfig = {
   appName: 'likelion-slime-runner',
   brand: {
-    displayName: 'Slime Runner',
+    displayName: '슬라임 러너',
     primaryColor: '#3182F6',
     icon: 'https://static.toss.im/appsintoss/845/65199289-2125-4eb9-b90b-59b61d0b1396.png',
     bridgeColorMode: 'inverted',
