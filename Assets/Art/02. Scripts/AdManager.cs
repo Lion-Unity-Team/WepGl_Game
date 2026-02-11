@@ -7,7 +7,7 @@ public class AdManager : MonoBehaviour
 {
     public static AdManager Instance { get; private set; }
     
-    private const string adId = "ait-ad-test-rewarded-id";
+    private const string adId = "ait.v2.live.437f810bd3fd4a77";
     private bool isAdLoaded = false;
     
     private Action onReward;
