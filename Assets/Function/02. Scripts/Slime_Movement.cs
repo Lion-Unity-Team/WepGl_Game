@@ -21,6 +21,8 @@ public class Slime_Movement : MonoBehaviour
 
     private uint sideTouch;
 
+    public bool isCountdown;
+
     private void Start()
     {
         _Anime = GetComponent<Animator>();
@@ -29,8 +31,8 @@ public class Slime_Movement : MonoBehaviour
     void Update()
     {
         if (EventSystem.current.IsPointerOverGameObject()) return;
-
-        if (UI1.activeSelf || UI2.activeSelf || UI3.activeSelf)
+        
+        if (UI1.activeSelf || UI2.activeSelf || UI3.activeSelf || isCountdown)
         {
             canMove = false;
         }
@@ -41,7 +43,7 @@ public class Slime_Movement : MonoBehaviour
 
         if (!canMove)
             return;
-
+        
         if (Input.GetMouseButtonDown(0))
         {
             mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);

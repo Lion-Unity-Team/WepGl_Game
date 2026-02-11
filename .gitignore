@@ -97,3 +97,15 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# Apps in Toss SDK - 민감한 인증 정보 보호
+**/AITCredentials.asset
+**/AITCredentials.asset.meta
+
+# WebGL Build
+webgl/
+
+# Apps in Toss Build
+ait-build/.npm-cache/
+ait-build/dist/
+ait-build/public/

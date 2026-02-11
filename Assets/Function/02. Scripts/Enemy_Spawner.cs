@@ -88,7 +88,7 @@ public class Enemy_Spawner : MonoBehaviour
                 if (!spawn[enemy_Pos])
                 {
                     spawn[enemy_Pos] = true;
-                    GameObject enemy = Instantiate(enemy_Prefab, new UnityEngine.Vector3(-2 + 2 * enemy_Pos, 7, 0), UnityEngine.Quaternion.identity);
+                    GameObject enemy = Instantiate(enemy_Prefab, new UnityEngine.Vector3(-2 + 2 * enemy_Pos, 10, 0), UnityEngine.Quaternion.identity);
 
                     
                     Enemy_Movement enemyscript = enemy.GetComponent<Enemy_Movement>();
@@ -218,7 +218,7 @@ private void Update()
             // ÇÁ¸®Æé »ý¼º
             GameObject fruit = Instantiate(
                 fruitPrefab,
-                new UnityEngine.Vector3(-2 + 2 * lane, 7, 0),
+                new UnityEngine.Vector3(-2 + 2 * lane, 10, 0),
                 UnityEngine.Quaternion.identity
             );
 

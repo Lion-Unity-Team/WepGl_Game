@@ -1,4 +1,6 @@
+using System.Collections;
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -23,9 +25,13 @@ public class GameStartManager : MonoBehaviour
 
     [SerializeField] private CanvasGroup _gameStartCanvasGroup;
     [SerializeField] private RectTransform _gameStartTransform;
-    
 
-    private void Start()        //게임이시작하면
+    [SerializeField] private TextMeshProUGUI countdownText;
+    [SerializeField] private Slime_Movement _movement;
+
+    [SerializeField] private GameObject Dim;
+    
+    private void Start()       
     {
         _gameEndCanvasGroup.alpha = 1;
         _gameEndRectTransform.localScale = Vector3.one;
@@ -38,13 +44,13 @@ public class GameStartManager : MonoBehaviour
         });
         
         KeepPlay.onClick.AddListener(CountClick);
-        enemyspawner.StopSpawning();    //일단적생성정지
-        GameOver.SetActive(false);      //게임오버UI숨김
-        StartWindow.SetActive(true);    //게임시작UI켜기
-        //이미 배경은 멈춰있음
+        enemyspawner.StopSpawning();    
+        GameOver.SetActive(false);     
+        StartWindow.SetActive(true);   
+        
 
-        _playerAnime = player.GetComponentInChildren<Animator>(); // 플레이어 애니메이션
-        _playerAnime.speed = 0;         // 플레이어 이동 멈춤
+        _playerAnime = player.GetComponentInChildren<Animator>();
+        _playerAnime.speed = 0;        
         _playerRunKey = "IsRun";
         _PlayerWakeUpKey = "WakeUp";
         CloudSpawner.isPlay = false;
@@ -54,13 +60,13 @@ public class GameStartManager : MonoBehaviour
         
         if (PlayerPrefs.HasKey("BestPlayerHP"))
         {
-            Debug.Log("로드된 최고 점수: " + PlayerPrefs.GetString("BestPlayerHP"));
+            
             SkinManager.instance.LoadData();
             PlayerManager.instance.LoadData();
         }
         else
         {
-            Debug.Log("최고 점수 없음 player, skin 초기화");
+            
             InitData();
         }
     }
@@ -84,11 +90,11 @@ public class GameStartManager : MonoBehaviour
         }
     }
 
-    public void StartGame()     //게임시작버튼누르면
+    public void StartGame()     
     {
-        _playerAnime.speed = 1;     // 플레이어 이동 시작
+        _playerAnime.speed = 1;     
         _playerAnime.SetBool(_playerRunKey, true);
-        enemyspawner.StartSpawning(); // 적생성시작
+        enemyspawner.StartSpawning(); 
         Ground.canMoving = true;
         
         _gameStartCanvasGroup.alpha = 1;
@@ -103,28 +109,63 @@ public class GameStartManager : MonoBehaviour
         CloudSpawner.isPlay = true;
     }
 
+    public void OnClickedShowAd()
+    {
+        SoundManager.instance.BgmMute(true);
+        SoundManager.instance.SfxMute(true);
+        Dim.SetActive(true);
+        AdManager.Instance.ShowAd(() => StartCoroutine(StartCountdown()));
+    }
+
+    IEnumerator StartCountdown()
+    {
+        Dim.SetActive(false);
+        _movement.isCountdown = true;
+        SoundManager.instance.BgmMute(false);
+        SoundManager.instance.SfxMute(false);
+        Time.timeScale = 0;
+        
+        _gameEndCanvasGroup.gameObject.SetActive(false);
+        countdownText.gameObject.SetActive(true);
+
+        for (int i = 3; i > 0; i--)
+        {
+            countdownText.text = i.ToString();
+            
+            Sequence seq = DOTween.Sequence();
+            
+            seq.Append(countdownText.transform.DOScale(1.8f, 0.15f).SetEase(Ease.OutExpo));
+            
+            seq.Append(countdownText.transform.DOScale(1.0f, 0.3f).SetEase(Ease.OutBack));
+            
+            seq.SetUpdate(true);
+
+            yield return new WaitForSecondsRealtime(1f);
+        }
+
+        countdownText.text = "GO!";
+        countdownText.transform.DOScale(2f, 0.2f).SetUpdate(true);
+        countdownText.DOFade(0, 0.5f).SetUpdate(true).OnComplete(() => {
+            countdownText.gameObject.SetActive(false);
+            Time.timeScale = 1;
+            _movement.isCountdown = false;
+            KeepGame();
+        });
+    }
+
     public void KeepGame()
     {
         CloudSpawner.isPlay = true;
-        _gameEndCanvasGroup.alpha = 1;
-        _gameEndRectTransform.localScale = Vector3.one;
-        
-        _gameEndCanvasGroup.DOFade(0, 0.3f).SetEase(Ease.Linear).SetUpdate(UpdateType.Normal, true);
-        _gameEndRectTransform.DOScale(0, 0.3f).SetEase(Ease.InBack).SetUpdate(UpdateType.Normal,
-            true).OnComplete(() =>
-        {
-            _gameEndCanvasGroup.gameObject.SetActive(false);
-        });
         
         StaminaManager.instance.StaminaChange(70);
-        StaminaManager.instance.StaminaPlus(0); // 스테미너 바를 갱신 하기 위함
+        StaminaManager.instance.StaminaPlus(0); 
         
-        _playerAnime.SetTrigger(_PlayerWakeUpKey);  //일어나는동작
-        _playerAnime.SetBool(_playerRunKey, true);  //달리는동작
-        enemyspawner.StartSpawning(); // 적생성시작
+        _playerAnime.SetTrigger(_PlayerWakeUpKey);  
+        _playerAnime.SetBool(_playerRunKey, true); 
+        enemyspawner.StartSpawning();
         Ground.canMoving = true;
         
-        foreach (var particle in particles) // 파티클 모두 시작
+        foreach (var particle in particles) 
         {
             particle.Play();
         }
@@ -140,11 +181,11 @@ public class GameStartManager : MonoBehaviour
         _gameEndCanvasGroup.DOFade(1, 0.3f).SetEase(Ease.Linear).SetUpdate(UpdateType.Normal, true);
         _gameEndRectTransform.DOScale(1, 0.3f).SetEase(Ease.OutBack).SetUpdate(UpdateType.Normal, true);
         
-        GameOver.SetActive(true);   // 게임오버UI켜짐
-        enemyspawner.StopSpawning();    // 적생성정지
+        GameOver.SetActive(true);   
+        enemyspawner.StopSpawning();   
         Ground.canMoving = false;
         
-        foreach (var particle in particles) // 파티클 모두 일시 정지
+        foreach (var particle in particles) 
         {
             particle.Pause();
         }
