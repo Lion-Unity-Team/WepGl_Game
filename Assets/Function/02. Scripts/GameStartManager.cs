@@ -109,12 +109,12 @@ public class GameStartManager : MonoBehaviour
         CloudSpawner.isPlay = true;
     }
 
-    public void OnClickedShowAd()
+    public void OnClickedContinueGame()
     {
         SoundManager.instance.BgmMute(true);
         SoundManager.instance.SfxMute(true);
         Dim.SetActive(true);
-        AdManager.Instance.ShowAd(() => StartCoroutine(StartCountdown()));
+        StartCoroutine(StartCountdown());
     }
 
     IEnumerator StartCountdown()
