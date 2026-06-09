@@ -3,18 +3,21 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "granite dev",
-    "build": "granite build",
-    "start": "granite dev",
+    "dev": "ait dev",
+    "build": "ait build || granite build",
+    "start": "ait dev",
     "deploy": "ait deploy"
   },
   "dependencies": {
-    "@apps-in-toss/web-framework": "1.8.1"
+    "@apps-in-toss/web-framework": "2.6.1",
+    "@apps-in-toss/bridge-core": "2.6.1",
+    "@apps-in-toss/web-analytics": "2.6.1"
   },
   "devDependencies": {
-    "vite": "^7.3.1",
-    "typescript": "^5.0.0"
+    "vite": "8.0.16",
+    "typescript": "6.0.3"
   },
+  "packageManager": "pnpm@10.28.0",
   "pnpm": {
     "overrides": {
       "@granite-js/plugin-core": "0.1.30",

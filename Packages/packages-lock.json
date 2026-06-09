@@ -147,16 +147,16 @@
       },
       "url": "https://packages.unity.com"
     },
-    "com.unity.editorcoroutines": {
+    "com.unity.device-simulator.devices": {
       "version": "1.0.1",
-      "depth": 1,
+      "depth": 0,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
-    "com.unity.device-simulator.devices": {
+    "com.unity.editorcoroutines": {
       "version": "1.0.1",
-      "depth": 0,
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -376,7 +376,7 @@
       "dependencies": {
         "com.unity.nuget.newtonsoft-json": "3.0.2"
       },
-      "hash": "896710244479e830a8e50189586af6c3bdd0970c"
+      "hash": "c96e2b24949993887053469409d05c6933fe38f7"
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",

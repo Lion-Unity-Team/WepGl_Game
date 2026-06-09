@@ -1,1 +1,4 @@
-{"appName":"likelion-slime-runner","permissions":[],"_metadata":{"runtimeVersion":"0.72.6","bundleFiles":["bundle.ios.0_72_6.js","bundle.ios.0_72_6.js.map","bundle.android.0_72_6.js","bundle.android.0_72_6.js.map"],"deploymentId":"019c4bb7-bc51-7563-95a0-cce06e068092","packageJson":{"dependencies":{"@apps-in-toss/web-framework":"1.8.1"},"devDependencies":{"vite":"7.3.1","typescript":"5.9.3"}}}}
+{
+  "appName": "likelion-slime-runner",
+  "permissions": []
+}
